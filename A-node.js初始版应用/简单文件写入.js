@@ -9,9 +9,7 @@
                     options:选项,可以对写入进行一些设置
                     callback:写入完成以后执行的函数
                 options一般都是一个对象,查看文档
-
-				fs.readFile(path[, options], callback)
-                fs.readFileSync(path[, options]) */
+ */
                 
 var fs = require('fs');
 /* fs.writeFile('input.txt','写入的新内容222',function(err){
