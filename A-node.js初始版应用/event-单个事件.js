@@ -1,4 +1,6 @@
 //event.js 文件
+// 事件相当于一个主题(Subject)
+// 所有注册到这个事件上的处理函数相当于观察者(Observer)
 var EventEmitter = require('events').EventEmitter;
 var event = new EventEmitter();
 // event 对象注册了事件 eventDemo 的一个监听器
@@ -12,10 +14,10 @@ setTimeout(function(){
     event.emit('eventDemo');
 },2000);
 
-
-// event.on(eventDemo2);
-// function eventDemo2(){
-//     console.log('触发事件2')
-// }
-// event.emit('eventDemo2');
-//上面这种写法是不对的
+// ('listener', 'Function', listener)
+/* event.on('eventDemo2');
+function eventDemo2(){
+    console.log('触发事件2')
+}
+event.emit('eventDemo2'); */
+// 上面这种写法是不对的

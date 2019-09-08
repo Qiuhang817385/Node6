@@ -1,0 +1,29 @@
+{
+name: "AAA",
+num: 3,
+sites: [
+{
+name: "Google",
+info: [
+"Android",
+"Google BBB",
+"Google CCC"
+]
+},
+{
+name: "Runoob",
+info: [
+"DDDD",
+"EEEE",
+"FFFF"
+]
+},
+{
+name: "Taobao",
+info: [
+"MMM",
+"NNN"
+]
+}
+]
+}

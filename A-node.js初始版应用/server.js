@@ -22,3 +22,11 @@ console.log('Server running at http://127.0.0.1:8888/');
 //  http.createServer() 方法创建服务器
 //  listen 方法绑定 8888 端口
 // 函数通过 request, response 参数来接收和响应数据
+
+/* const server = http.createServer((req, res) => { 
+    res.statusCode = 200; 
+    res.setHeader('Content-Type', 'text/plain'); res.end('Hello World\n');
+  });
+ server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`); 
+}); */

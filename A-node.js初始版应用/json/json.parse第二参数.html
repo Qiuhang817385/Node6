@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- https://www.runoob.com/json/json-parse.html -->
+</head>
+<body>
+        <p id="demo"></p>
+
+        <script>
+        
+        var text = '{ "name":"Runoob", "initDate":"2013-12-14", "site":"www.runoob.com"}';
+        var obj = JSON.parse(text, function (key, value) {
+            if (key == "initDate") {
+                return new Date(value);
+            } else {
+                return value;
+        }});
+        
+        document.getElementById("demo").innerHTML = obj.name + "创建日期：" + obj.initDate;
+        
+        </script>
+</body>
+</html>
