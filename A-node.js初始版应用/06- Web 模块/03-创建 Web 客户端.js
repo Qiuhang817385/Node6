@@ -1,5 +1,9 @@
 var http = require('http');
  
+// 可以理解成ajax
+//数据是假数据,没有通过java后台操作数据库处理
+
+
 // 用于请求的选项
 var options = {
    host: 'localhost',

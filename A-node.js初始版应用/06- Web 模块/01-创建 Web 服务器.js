@@ -5,10 +5,15 @@ var url = require('url');
 
 
 http.createServer(  function(request,response){
+
+    console.log(request.url);//      /index.html
+    
     var pathName  = url.parse(request.url).pathname;
     
     console.log("Request for " + pathName + " received.");
-
+    console.log(pathName.substr(1));//index.html
+    console.log(pathName);///index.html
+    
 
     fs.readFile(pathName.substr(1),function(err, data){
         if(err){
