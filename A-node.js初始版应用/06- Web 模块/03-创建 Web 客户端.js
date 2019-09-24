@@ -25,5 +25,9 @@ var callback = function(response){
    });
 }
 // 向服务端发送请求
+
+console.log(options);
+//自动拼接起来的{ host: 'localhost', port: '8081', path: '/index.html' }   写到头文件里面
+
 var req = http.request(options, callback);
 req.end();
